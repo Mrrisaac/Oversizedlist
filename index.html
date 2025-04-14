@@ -58,32 +58,197 @@
 </head>
 <body>
   <h1>Oversized Vehicles List</h1>
-  <!-- Content omitted for brevity -->
+
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search for a vehicle...">
+    <select id="brandFilter">
+      <option value="">All Brands</option>
+      <option value="Acura">Acura</option>
+      <option value="Alfa Romeo">Alfa Romeo</option>
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Buick">Buick</option>
+      <option value="Cadillac">Cadillac</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Chrysler">Chrysler</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Ford">Ford</option>
+      <option value="Genesis">Genesis</option>
+      <option value="GMC">GMC</option>
+      <option value="Honda">Honda</option>
+      <option value="Hyundai">Hyundai</option>
+      <option value="Infiniti">Infiniti</option>
+      <option value="Jeep">Jeep</option>
+      <option value="Kia">Kia</option>
+      <option value="Lincoln">Lincoln</option>
+      <option value="Mazda">Mazda</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="Mitsubishi">Mitsubishi</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Polestar">Polestar</option>
+      <option value="Rivian">Rivian</option>
+      <option value="SRT">SRT</option>
+      <option value="Subaru">Subaru</option>
+      <option value="Tesla">Tesla</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Volvo">Volvo</option>
+    </select>
+  </div>
+
+  <div id="vehicleList">
+    <h2 onclick="toggleList(this)">Acura</h2>
+    <ul data-brand="Acura">
+      <li><img src="https://cdn.motor1.com/images/mgl/vpp6e/s3/acura-mdx.jpg" alt="Acura MDX">Acura MDX (2014–2025) — Length: 198.4" | Height: 67.8"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/yM6WJ/s1/acura-rdx.jpg" alt="Acura RDX">Acura RDX (2019–2025) — Length: 189.4" | Height: 66.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Alfa Romeo</h2>
+    <ul data-brand="Alfa Romeo">
+      <li><img src="https://cdn.motor1.com/images/mgl/xM7Er/s3/alfa-romeo-stelvio.jpg" alt="Alfa Romeo Stelvio">Alfa Romeo Stelvio (2018–2024) — Length: 190.6" | Height: 66.0"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Audi</h2>
+    <ul data-brand="Audi">
+      <li><img src="https://cdn.motor1.com/images/mgl/92rWx/s3/audi-q7.jpg" alt="Audi Q7">Audi Q7 (2014–2024) — Length: 199.6" | Height: 69.9"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/yNbQK/s3/audi-q8.jpg" alt="Audi Q8">Audi Q8 (2019–2024) — Length: 196.6" | Height: 66.7"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Buick</h2>
+    <ul data-brand="Buick">
+      <li><img src="https://cdn.motor1.com/images/mgl/ER2MZ/s3/2022-buick-enclave.jpg" alt="Buick Enclave">Buick Enclave (2018–2024) — Length: 204.3" | Height: 69.9"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/nwGKy/s1/2021-buick-envision.jpg" alt="Buick Envision">Buick Envision (2016–2024) — Length: 182.5" | Height: 65.5"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Cadillac</h2>
+    <ul data-brand="Cadillac">
+      <li><img src="https://cdn.motor1.com/images/mgl/Gn0Y6/s3/2023-cadillac-escalade.jpg" alt="Cadillac Escalade">Cadillac Escalade (2014–2025) — Length: 203.9" | Height: 74.4"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/zJJj6/s3/2023-cadillac-xt6.jpg" alt="Cadillac XT6">Cadillac XT6 (2020–2024) — Length: 198.5" | Height: 69.9"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Chrysler</h2>
+    <ul data-brand="Chrysler">
+      <li><img src="https://cdn.motor1.com/images/mgl/lkkB6/s3/2023-chrysler-pacifica.jpg" alt="Chrysler Pacifica">Chrysler Pacifica (2017–2024) — Length: 203.8" | Height: 69.9"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/9JrAv/s1/2021-chrysler-voyager.jpg" alt="Chrysler Voyager">Chrysler Voyager (2020–2024) — Length: 203.8" | Height: 69.9"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Dodge</h2>
+    <ul data-brand="Dodge">
+      <li><img src="https://cdn.motor1.com/images/mgl/Jk6RB/s3/2021-dodge-durango.jpg" alt="Dodge Durango">Dodge Durango (2021–2024) — Length: 200.8" | Height: 70.9"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Genesis</h2>
+    <ul data-brand="Genesis">
+      <li><img src="https://cdn.motor1.com/images/mgl/kk1xG/s1/genesis-gv80.jpg" alt="Genesis GV80">Genesis GV80 (2021–2024) — Length: 194.7" | Height: 68.3"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/OooGg/s1/genesis-gv70.jpg" alt="Genesis GV70">Genesis GV70 (2022–2024) — Length: 189.6" | Height: 65.4"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">GMC</h2>
+    <ul data-brand="GMC">
+      <li><img src="https://cdn.motor1.com/images/mgl/k6J0k/s3/gmc-yukon.jpg" alt="GMC Yukon">GMC Yukon (2014–2024) — Length: 203.9"–210" | Height: 76.0"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/Bn3J3/s3/2023-gmc-sierra-1500.jpg" alt="GMC Sierra 1500">GMC Sierra 1500 (2014–2024) — Length: 231.7"–241.2" | Height: 74.3"–76.8"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/zrK13/s3/2024-gmc-hummer-ev.jpg" alt="GMC Hummer EV">GMC Hummer EV (2025) — Truck: 216.8" | Height: 79.1" | SUV: 196.8" | Height: 77.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Honda</h2>
+    <ul data-brand="Honda">
+      <li><img src="https://cdn.motor1.com/images/mgl/6x7yX/s3/2023-honda-odyssey.jpg" alt="Honda Odyssey">Honda Odyssey (2014–2024) — Length: 205.1" | Height: 69.6"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/vJ1rA/s3/2023-honda-pilot.jpg" alt="Honda Pilot">Honda Pilot (2014–2024) — Length: 196.5" | Height: 70.6"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Hyundai</h2>
+    <ul data-brand="Hyundai">
+      <li><img src="https://cdn.motor1.com/images/mgl/ooL0N/s3/2023-hyundai-palisade.jpg" alt="Hyundai Palisade">Hyundai Palisade (2020–2024) — Length: 196.1" | Height: 68.9"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/XJ9Zo/s3/2022-hyundai-santa-cruz.jpg" alt="Hyundai Santa Cruz">Hyundai Santa Cruz (2022–2024) — Length: 195.7" | Height: 66.7"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Infiniti</h2>
+    <ul data-brand="Infiniti">
+      <li><img src="https://cdn.motor1.com/images/mgl/ORxVo/s3/2023-infiniti-qx80.jpg" alt="Infiniti QX80">Infiniti QX80 (2014–2024) — Length: 210.2" | Height: 75.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Jeep</h2>
+    <ul data-brand="Jeep">
+      <li><img src="https://cdn.motor1.com/images/mgl/L99gL/s3/2023-jeep-grand-cherokee.jpg" alt="Jeep Grand Cherokee">Jeep Grand Cherokee (2014–2024) — Length: 189.8" | Height: 69.3"</li>
+      <li><img src="https://cdn.motor1.com/images/mgl/lAAZq/s3/2023-jeep-wrangler.jpg" alt="Jeep Wrangler">Jeep Wrangler Unlimited (2014–2024) — Length: 188.4" | Height: 73.6"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Kia</h2>
+    <ul data-brand="Kia">
+      <li><img src="https://cdn.motor1.com/images/mgl/2xZjJ/s3/2023-kia-telluride.jpg" alt="Kia Telluride">Kia Telluride (2020–2024) — Length: 196.9" | Height: 68.9"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Lincoln</h2>
+    <ul data-brand="Lincoln">
+      <li><img src="https://cdn.motor1.com/images/mgl/nYYQn/s3/2023-lincoln-navigator.jpg" alt="Lincoln Navigator">Lincoln Navigator (2015–2024) — Length: 207.6" | Height: 76.2"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Mazda</h2>
+    <ul data-brand="Mazda">
+      <li><img src="https://cdn.motor1.com/images/mgl/L0Mmk/s3/2024-mazda-cx-90.jpg" alt="Mazda CX-90">Mazda CX-70 (2025) — Length: 200.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Mitsubishi</h2>
+    <ul data-brand="Mitsubishi">
+      <li><img src="https://cdn.motor1.com/images/mgl/kbNkJ/s3/2023-mitsubishi-outlander.jpg" alt="Mitsubishi Outlander">Mitsubishi Outlander (2022–2024) — Length: 185.4" | Height: 68.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Nissan</h2>
+    <ul data-brand="Nissan">
+      <li><img src="https://cdn.motor1.com/images/mgl/0xwVL/s3/2023-nissan-armada.jpg" alt="Nissan Armada">Nissan Armada (2021–2024) — Length: 208.9" | Height: 75.8"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Polestar</h2>
+    <ul data-brand="Polestar">
+      <li><img src="https://cdn.motor1.com/images/mgl/WPppKY/s3/polestar-3.jpg" alt="Polestar 3">Polestar 3 (2025) — Dimensions: TBD</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">SRT</h2>
+    <ul data-brand="SRT">
+      <li><img src="https://cdn.motor1.com/images/mgl/KRZRb/s3/dodge-durango-srt.jpg" alt="Dodge Durango SRT">Dodge Durango SRT (2018–2024) — Length: 201.2" | Height: 71.9"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Volkswagen</h2>
+    <ul data-brand="Volkswagen">
+      <li><img src="https://cdn.motor1.com/images/mgl/X6PZo/s3/2024-volkswagen-atlas.jpg" alt="Volkswagen Atlas">Volkswagen Atlas (2018–2024) — Length: 198.3" | Height: 70.0"</li>
+    </ul>
+
+    <h2 onclick="toggleList(this)">Volvo</h2>
+    <ul data-brand="Volvo">
+      <li><img src="https://cdn.motor1.com/images/mgl/LAAkK/s3/2024-volvo-xc90.jpg" alt="Volvo XC90">Volvo XC90 (2016–2024) — Length: 194.9" | Height: 69.9"</li>
+    </ul>
+  </div>
   <script>
     function toggleList(header) {
       const ul = header.nextElementSibling;
       ul.style.display = ul.style.display === 'block' ? 'none' : 'block';
     }
+
     const searchBox = document.getElementById('searchBox');
     const brandFilter = document.getElementById('brandFilter');
     const vehicleList = document.getElementById('vehicleList');
+
     function filterList() {
       const query = searchBox.value.toLowerCase();
       const brand = brandFilter.value;
       const uls = vehicleList.querySelectorAll('ul');
+
       uls.forEach(ul => {
         const brandMatches = !brand || ul.getAttribute('data-brand') === brand;
         let matchFound = false;
+
         ul.querySelectorAll('li').forEach(li => {
           const text = li.textContent.toLowerCase();
           const matches = text.includes(query);
           li.style.display = matches ? 'flex' : 'none';
           if (matches) matchFound = true;
         });
+
         ul.style.display = brandMatches && matchFound ? 'block' : 'none';
         ul.previousElementSibling.style.display = brandMatches && matchFound ? 'block' : 'none';
       });
     }
+
     searchBox.addEventListener('input', filterList);
     brandFilter.addEventListener('change', filterList);
   </script>
